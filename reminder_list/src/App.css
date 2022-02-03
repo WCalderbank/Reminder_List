@@ -1,0 +1,12 @@
+#App {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./Images/Pacman.jpeg");
+  height: 100vh;
+  margin: 3rem;
+  border: 20px solid rgb(63, 41, 0);
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  z-index: -1;
+}
