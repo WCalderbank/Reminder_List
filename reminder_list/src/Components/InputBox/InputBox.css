@@ -1,0 +1,11 @@
+#submit {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+#submitBtn {
+  color: lime;
+  background-color: black;
+  border: solid rgb(0, 0, 0);
+  font-weight: 800;
+}

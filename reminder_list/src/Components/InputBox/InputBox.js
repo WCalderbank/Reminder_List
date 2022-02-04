@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./InputBox.css";
 
 function InputBox({ handleClick }) {
   const [text, setText] = useState("");
@@ -8,7 +9,7 @@ function InputBox({ handleClick }) {
   }
 
   return (
-    <div>
+    <div id="submit">
       <input
         id="input-box"
         maxLength="75"
@@ -16,7 +17,9 @@ function InputBox({ handleClick }) {
         type="text"
         required
       />
-      <button onClick={(e) => handleClick(e, text)}>Submit</button>
+      <button id="submitBtn" onClick={(e) => handleClick(e, text)}>
+        INSERT TOKEN
+      </button>
     </div>
   );
 }

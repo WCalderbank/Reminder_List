@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div id="App" className="App">
-      <h1> REMINDERS </h1>
+      <h1 id="title"> RETRO REMINDERS ! </h1>
       <InputBox handleClick={addToList} />
       <List list={data} deleteFromList={deleteFromList} />
     </div>
