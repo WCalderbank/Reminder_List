@@ -3,16 +3,17 @@ import "./ListNote.css";
 
 function ListNote({ text, handleClick }) {
   return (
-    <li id="list">
-      <div id="pacman">
-        <dot id="eye">⚫️</dot>
-      </div>
-      <div id="noteBox">
+    <li id="noteBox">
+      <div>
+        <div id="pacman"></div>
         <h3 id="h3">{text}</h3>
         <button id="delete-button" onClick={handleClick}>
-          Delete
+          <i id="ghost" class="fas fa-ghost"></i>
         </button>
-        <input type="checkbox" />
+
+        <button id="dots">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
       </div>
     </li>
   );

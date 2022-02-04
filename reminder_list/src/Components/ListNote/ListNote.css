@@ -1,6 +1,18 @@
+#noteBox {
+  list-style: none;
+  padding: 2rem;
+  background-color: black;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border: solid white;
+}
+
 #pacman {
-  width: 0px;
-  height: 0px;
+  width: 2px;
+  height: 2px;
   border-right: 60px solid transparent;
   border-top: 60px solid yellow;
   border-left: 60px solid yellow;
@@ -9,21 +21,61 @@
   border-top-right-radius: 60px;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
-  z-index: 1000;
+  margin-top: -5%;
+  margin-left: 27%;
+  background-color: black;
 }
 
-#eye {
-  margin-top: -35%;
-  margin-left: -9%;
+#delete-button {
+  position: absolute;
+  top: 45px;
+  right: 70px;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: black;
 }
 
-#noteBox {
-  background-color: magenta;
+#checkbox {
+  position: absolute;
+  top: 45px;
+  left: 75px;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
-#list {
-  width: 10%;
-  display: grid;
-  grid-template-columns: repeat(3);
-  margin-bottom: 1rem;
+#h3 {
+  font-family: monospace;
+  font-size: 20px;
+  width: 85%;
+  word-wrap: break-word;
+  position: absolute;
+  text-align: center;
+  color: white;
+  background-color: black;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ghost {
+  color: lime;
+  font-size: 40px;
+  transition-duration: 10ms;
+}
+
+#ghost:hover {
+  color: red;
+  font-size: 40px;
+}
+
+#dots {
+  position: absolute;
+  border: none;
+  bottom: 5%;
+  left: 45%;
+  color: yellow;
+  background-color: black;
+  font-size: 60px;
+  transform: rotate(90deg);
 }
